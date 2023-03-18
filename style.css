@@ -1,0 +1,296 @@
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Montserrat', sans-serif;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+section{
+    border: 1px solid black;
+    /* background-color: rgb(24, 24, 66); */
+    height: 100vh;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+/* ================================================================= */
+
+
+#hero{
+    border-width: 0 0 1px 0;
+    border-radius:20px ;
+    background-color:  white;
+    height: 100vh;
+    color: black;
+    font-size : 25px;
+}
+
+nav{
+
+    background-color: rgba(245, 245, 245, 0.769);
+    position: sticky;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 14vh;
+    border-bottom: 2px solid rgba(228, 228, 228, 0.436) ;
+    /* background-color: rgb(172, 170, 170); */
+}
+nav ul{
+    align-items: center;
+    list-style: none;
+    margin-right: 40px;
+
+
+}
+
+nav li {
+   display: inline-block;
+   margin: 10px 10px;
+   font-weight: 600;
+}
+
+.logo-container{
+    width: 30%;
+    height: 100%;
+}
+.logo-container img{
+    height: 90%;
+}
+
+
+.hero-text-area{
+    height: 100%;
+    display: flex;
+    align-items: center;
+
+}
+.hero-text-container{
+    margin: 0 0 230px 50px;
+}
+
+/* =============================================================== */
+
+#projects {
+    background-color: #fff;
+    padding: 50px 20px;
+    margin-top: 50px;
+    border-radius: 20px;  
+    height: 100vh;
+    
+}
+
+#projects h2{
+    color: black;
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    font-weight: 700 ;
+    font-size: 36px;  
+}
+
+  
+.different-genre-cards-container {
+    /* border: 4px solid rgb(0, 4, 255); */
+  
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+
+    display: flex;
+    justify-content:space-evenly;
+
+    transition: transform 0.2s ease-in-out;
+
+    height: 50%;
+}
+
+.same-genre-cards-container{
+    /* border: 2px dotted black; */
+    padding-top: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr ;
+    height: fit-content;
+  
+}
+.project-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;  
+    justify-content:center;
+    transition: all 0.3s ease 0s;
+    height: 100%;
+
+}  
+
+.project-card h3:hover {
+    transform: scale(1.05);
+   
+}
+
+.project-card .video-container:hover{
+    transform: scale(1.18);
+}
+
+.project-card *{
+    transition: all 0.3s ease 0s;
+}
+.project-card *:hover{
+    cursor:pointer;
+}
+
+.project-card h3{
+    font-size: 24px;
+    font-weight: 800;
+   
+}
+.project-card h3:hover{
+    font-size: 24px;
+   
+}
+
+.video-container{
+    box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.468);
+    margin: 10px 0px 20px 0;
+    width: 50%;
+    border-radius: 7px;
+    overflow: hidden;
+    
+}
+
+.video-container video {
+    width: 100%; 
+    height: 100%;
+    object-fit: fill;
+    
+}
+  
+.project-card p {
+    font-size: 14px;
+    font-weight: 600;
+   
+}
+  
+.edited-with-logos{
+    /* border: 2px solid yellow; */
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.edited-with-logos .img-container{
+  width:  20%;
+
+} 
+
+.img-container img{
+    width: 100%;
+    opacity: 0.7;
+    transform: scale(0.9);
+    
+} 
+
+.img-container img:hover{
+    width: 100%;
+    opacity: 1;
+    transform: scale(1);
+    
+} 
+
+.See-More{
+   
+    font-size: 17px;
+    background-color: black;
+    color: white;
+    text-align: center;
+    margin-left: 300px; /* how to center that shit ?*/
+   
+    padding: 2px 40px;
+    border-radius: 9px;
+    transition: all 0.3s ease 0s;
+}
+
+.See-More:hover{
+  background-color:rgba(0, 0, 0, 0.906) ;
+  cursor : pointer;
+}
+
+li a{
+    position: relative;
+    padding-bottom: 2.3px;
+}
+
+li a::before {
+    
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    border-radius: 4px;
+    background-color: #18272F;
+    bottom: 0;
+    left: 0;
+    transform-origin: right;
+    transform: scaleX(0);
+    transition: transform .3s ease-in-out;
+}
+  
+li a:hover::before {
+    transform-origin: left;
+    transform: scaleX(1);
+}
+
+h1{
+   font-weight: 700;
+   padding-bottom: 10px;
+}
+p{
+    /* font-style: italic; */
+    font-weight: 600;
+    font-size: 25px;
+    
+}
+
+.button a{ 
+    font-weight: 600;
+    color: white;
+    letter-spacing:1.2px;
+}
+
+
+.button{
+
+    font-size:23px ;
+    background-color: black;  
+    display: inline-block;
+    text-align: center ;
+    border-radius:30px;
+    
+
+    margin-top: 18px;
+    padding: 8px 15px ;
+    transition: all 0.2s ease 0s; 
+                
+            
+}
+
+.button:hover{
+    cursor: pointer;
+    background-color:rgba(0, 0, 0, 0.906);
+    box-shadow: 2px 2px rgba(49, 48, 48, 0.114) ;
+    /* margin: 19.5px 0 0 1.5px; */
+}
+
+footer{
+    height: 25vh;
+    background-color: rgb(14, 11, 38);
+}
