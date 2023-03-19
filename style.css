@@ -53,7 +53,7 @@ nav ul{
 
 }
 
-nav li {
+nav li{
    display: inline-block;
    margin: 10px 10px;
    font-weight: 600;
@@ -80,7 +80,7 @@ nav li {
 
 /* =============================================================== */
 
-#projects {
+#projects{
     background-color: #fff;
     padding: 50px 20px;
     margin-top: 50px;
@@ -99,30 +99,47 @@ nav li {
 }
 
   
-.different-genre-cards-container {
+.different-genre-cards-container{
     /* border: 4px solid rgb(0, 4, 255); */
-  
+    position: relative;
     border-radius: 10px;
-    overflow: hidden;
+    /* overflow: hidden; */
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 
     display: flex;
     justify-content:space-evenly;
+    align-items: center;
 
     transition: transform 0.2s ease-in-out;
 
-    height: 50%;
+    height: fit-content;
 }
 
+
+/* .project-genre{
+    background-color: #171717;
+    background-color:#353535 ; color-pallet
+    color: white;
+    
+    position: absolute;
+    transform : translateX(-50%);
+
+    top: 0;
+    left: 50%;
+
+    
+    padding: 10px 20px;
+} */
 .same-genre-cards-container{
     /* border: 2px dotted black; */
-    padding-top: 20px;
+    padding: 40px 0; 
     display: grid;
     grid-template-columns: 1fr 1fr ;
-    height: fit-content;
+    height: 100%;
+    position: relative;
   
 }
-.project-card {
+.project-card{
     display: flex;
     flex-direction: column;
     align-items: center;  
@@ -132,7 +149,7 @@ nav li {
 
 }  
 
-.project-card h3:hover {
+.project-card h3:hover{
     transform: scale(1.05);
    
 }
@@ -167,16 +184,18 @@ nav li {
     
 }
 
-.video-container video {
+.video-container video{
     width: 100%; 
     height: 100%;
     object-fit: fill;
     
 }
   
-.project-card p {
-    font-size: 14px;
+.project-card p{
+    font-size: 17px;
     font-weight: 600;
+    opacity: 0.8;
+    transform: scale(0.9);
    
 }
   
@@ -184,23 +203,19 @@ nav li {
     /* border: 2px solid yellow; */
     display: flex;
     justify-content: center;
-    width: 100%;
+    width: 50px;
+
 }
 
-.edited-with-logos .img-container{
-  width:  20%;
 
-} 
-
-.img-container img{
+.edited-with-logos img{
     width: 100%;
     opacity: 0.7;
     transform: scale(0.9);
     
 } 
 
-.img-container img:hover{
-    width: 100%;
+.edited-with-logos img:hover, .project-card p:hover{
     opacity: 1;
     transform: scale(1);
     
@@ -212,10 +227,15 @@ nav li {
     background-color: black;
     color: white;
     text-align: center;
-    margin-left: 300px; /* how to center that shit ?*/
-   
-    padding: 2px 40px;
-    border-radius: 9px;
+    /* margin-left: 300px; how to center that shit ? */
+ 
+    position: absolute;
+    transform : translateX(-50%);
+    bottom: 10px;
+    left: 50%;
+
+    padding: 10px 10px;
+    border-radius: 4px;
     transition: all 0.3s ease 0s;
 }
 
@@ -229,7 +249,7 @@ li a{
     padding-bottom: 2.3px;
 }
 
-li a::before {
+li a::before{
     
     content: '';
     position: absolute;
@@ -244,7 +264,7 @@ li a::before {
     transition: transform .3s ease-in-out;
 }
   
-li a:hover::before {
+li a:hover::before{
     transform-origin: left;
     transform: scaleX(1);
 }
@@ -260,21 +280,20 @@ p{
     
 }
 
-.button a{ 
+.about-me-button a{ 
     font-weight: 600;
     color: white;
     letter-spacing:1.2px;
 }
 
 
-.button{
+.about-me-button{
 
     font-size:23px ;
-    background-color: black;  
+    background-color: rgb(0, 0, 0);  
     display: inline-block;
     text-align: center ;
     border-radius:30px;
-    
 
     margin-top: 18px;
     padding: 8px 15px ;
@@ -283,14 +302,64 @@ p{
             
 }
 
-.button:hover{
+.about-me-button:hover{
     cursor: pointer;
     background-color:rgba(0, 0, 0, 0.906);
     box-shadow: 2px 2px rgba(49, 48, 48, 0.114) ;
-    /* margin: 19.5px 0 0 1.5px; */
+
 }
 
 footer{
     height: 25vh;
     background-color: rgb(14, 11, 38);
 }
+
+
+/* Style for "CARS" button */
+.btn {
+    z-index: 1;
+    position: absolute;
+    transform : translateX(-50%);
+    top: 0;
+    left: 50%;
+    box-shadow: 2px 2px 10px rgba(126, 126, 126, 0.253);
+    padding: 5px 30px;
+    cursor: pointer;
+    color: white;
+    background: #171717;
+    border: 1px solid #cecece;
+    border-radius: 3px;
+    outline: none;
+    transition: 1s ease-in-out;
+}
+
+svg {
+
+    position: absolute;
+    left: 0;
+    top: 0;
+    fill: none;
+    stroke: #fff;
+    stroke-dasharray: 150 480;
+    stroke-dashoffset: 150;
+    transition: 1s ease-in-out;
+}
+
+.btn:hover {
+    transition: 1s ease-in-out;
+    background: white;
+    color: black;
+}
+
+.btn:hover svg {
+    stroke-dashoffset: -480;
+}
+
+.btn span {
+    color: color(27, 84, 189);
+    font-size: 25px;
+    font-weight: 700;
+    letter-spacing: 5px;
+}
+
+  /* END OF STYLE*/
