@@ -8,6 +8,10 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,500;0,600;0,700;0,800;0,900;1,500;1,600&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
     
     </head>
     <body>
@@ -16,7 +20,7 @@
         <section id ="hero">
             <nav>
                 <div class="logo-container">
-                    <img src="./pics/logo.png" alt="USTHB"> 
+                    <img src="./pics/logo2.png" alt="USTHB"> 
                 </div>
                 <ul>
                     <li> 
@@ -28,6 +32,9 @@
                     <li> 
                         <a href="#"> CONTACT </a> 
                     </li>
+                    <li> 
+                        <a href="#"> ABOUT ME </a> 
+                    </li>
                 
                 </ul>
             </nav>
@@ -35,20 +42,57 @@
             <div class="hero-text-area">
                 <div class="hero-text-container">
                     <h1>Mohamed Bouguezine</h1>
-                    <p>Video Editor</p>
-                    <div class="about-me-button">
-                        <a href="#aboutMe">About Me</a>
+                    <h3>Video Editor</h3>
+                    <div class="hero-button">
+                        <a href="#aboutMe">ABOUT ME</a>
                     </div>
-                    
+                    <div class="hero-button">
+                        <a href="#projects">PROJECTS</a>
+                    </div>
                 </div>
             </div>
 
         </section>
         <!-- END OF HERO SECTION -->
 
-
+        <section id="aboutMe">   
+            <h2 class="page-title">ABOUT ME</h2>
+            <div id="aboutMe-container">
+                <div id="headshot-container">
+                    <img src="./pics/headshots/Headshot.png" alt="Mohamed B">
+                </div>
+                <div class="text-area">
+                    <h1>
+                        Hello, I'm Mohamed !
+                    </h1>
+                    <h2>
+                        SPECIALIZED IN VIDEO EDITING
+                    </h2>
+    
+                    <p>
+                        I am passionate about editing clips to effectively deliver a message or tell a compelling story.
+                    </p>
+                    <p>
+                        I have gained experience working in multimedia departments within university clubs, where my team and I have edited event announcements, recaps, and highlights for the club's Instagram Page. 
+                        Through these experiences, as well as personal projects
+                    
+                        I have developed intermediate-level skills in Adobe Premiere Pro, Adobe After Effects, and Vegas Pro, 
+                        as well as soft skills such as working collaboratively as a team, being open to any feedback and suggestions, and always striving to improve my work. 
+                    
+                    </p>
+                    <p>
+                        Please feel free to take a look at the kind of work I do , and don't hesitate to reach out to me with any questions you may have.
+                    </p>
+                    
+                </div>
+              
+            </div>
+         
+        </section>  
+       
+        
         <section id = "projects">
-            <h2>Projects</h2>
+            <h2 class="page-title">PROJECTS</h2>
           
            
             <div class= different-genre-cards-container>
@@ -60,7 +104,7 @@
                     <div class="project-card">
                         <h3> DRIFTING </h3>
                         <div class="video-container">
-                            <video src="./videos/cars/PHONK_CAR_EDIT.mp4" autoplay  muted loop> </video>
+                            <video src="./videos/cars/PHONK_CAR_EDIT.mp4"   muted loop> </video>
                         </div>
                         <p> Edited with </p>
                         <div class="edited-with-logos">
@@ -88,7 +132,7 @@
                     <div class="project-card">
                         <h3> SHOWCASING  </h3>
                         <div class="video-container">
-                            <video src="./videos/cars/SOWCASE_CAR_EDIT.mp4" autoplay muted loop> </video>
+                            <video src="./videos/cars/SOWCASE_CAR_EDIT.mp4"  muted loop> </video>
                         </div>
                      
                         <p>Edited with</p>
@@ -105,7 +149,7 @@
                     <!-- this is the start of the code for the "Cars" button -->
                     <!-- =================================================================== -->
                     <div class="button-container">
-                        <button class="btn" id="animation">
+                        <button class="btn">
                             <svg   class="border">
                                 <polyline points="179,1 179,59 1,59 1,1 179,1" class="bg-line" />
                                 <polyline points="179,1 179,59 1,59 1,1 179,1" class="hl-line" />
@@ -118,26 +162,9 @@
                     <!-- the end of it =================================================== -->
 
                     <div class="project-card">
-                        <h3> EVENT INTERVIEW </h3>
-                        <div class="video-container" >
-                            <video src="./videos/CLUB EVENT/AI_SUMMIT.mp4" id="ai_summit" autoplay  muted loop> </video>
-                        </div>
-                        <p> Edited with </p>
-                        <div class="edited-with-logos">
-                            <img src="./pics/Adobe_Premiere_Pro-Logo.png" alt="Adobe Pr">
-                            <img src="./pics/Adobe_After_Effects-Logo.png" alt="Adobe Ae">
-                        </div>
-                    </div>
-
-                    <div class="separator">
-
-                    </div>
-
-
-                    <div class="project-card">
                         <h3> EVENT HIGHLIGHTS   </h3>
                         <div class="video-container">
-                            <video src="./videos/CLUB EVENT/OMC_INCUBATHON.mp4" id="nvidia" autoplay muted loop > </video>
+                            <video src="./videos/CLUB EVENT/OMC_INCUBATHON.mp4" id="nvidia"  muted loop > </video>
                         </div>
                         
                         <p>Edited with</p>
@@ -149,16 +176,35 @@
                         </div>
                     
                     </div>
+                    
+                    <div class="separator">
+
+                    </div>
+                    
+                    <div class="project-card">
+                        <h3> EVENT INTERVIEW </h3>
+                        <div class="video-container" >
+                            <video src="./videos/CLUB EVENT/AI__SUMMIT.mp4" id="ai_summit"   muted loop> </video>
+                        </div>
+                        <p> Edited with </p>
+                        <div class="edited-with-logos">
+                            <img src="./pics/Adobe_Premiere_Pro-Logo.png" alt="Adobe Pr">
+                            <img src="./pics/Adobe_After_Effects-Logo.png" alt="Adobe Ae">
+                        </div>
+                    </div>
+
+
+                  
                 </div>
 
                 <!-- LOGO ANIAMTION 
                 ==================================== -->
-                <div class="same-genre-cards-container">
+                <div class="same-genre-cards-container" id ="logo-animation">
                 
                     <div class="project-card">
                         <h3>Weights & Biases</h3>
                         <div class="video-container" >
-                            <video src="./videos/logo-animation/W&B-cutted.mp4" id="w-b" autoplay  muted loop> </video>
+                            <video src="./videos/logo-animation/W&B-cutted.mp4" id="w-b"   muted loop> </video>
                         </div>
                         <p> Edited with </p>
                         <div class="edited-with-logos">
@@ -185,7 +231,7 @@
                     <div class="project-card">
                         <h3> Nvida   </h3>
                         <div class="video-container">
-                            <video src="./videos/logo-animation/Nvdia_cutted.mp4" id="nvidia"" autoplay muted loop > </video>
+                            <video src="./videos/logo-animation/Nvdia_cutted.mp4" id="nvidia""  muted loop > </video>
                         </div>
                         
                         <p>Edited with</p>
@@ -197,16 +243,56 @@
                 </div>
 
                 <!-- SEE MORE button -->
-                <div class="See-More" >
-                    See More 
+                <div>
+                    <a class="See-More" href="#projects">
+                        SEE MORE <span>PROJECTS</span>  
+                    </a>
                 </div> 
             </div>
         </section>
 
-        <section id="aboutMe">   
-        </section>  
-       
+
         <footer>
+            <h2 class="page-title">GET IN TOUCH</h2>
+           <div class="contactInfo-socials--container">
+                <div class="contact-info">
+                <div class="input-label--container">
+                    <label for="email-input">Email Address:</label>
+                    <input type="email" id="email-input" class="input" name="email" placeholder="Enter your email address">
+                </div>
+                <div class="input-label--container">
+                    <label for="message-input">Want To Work Together ?</label>
+                    <textarea type="text" placeholder="Tell Me More About it !" class ="input" id="message-input"></textarea>
+                </div>
+                <div class="button">
+                    SUBMIT
+                </div>
+                </div>
+                <div class="socials">
+                    <div class="logo-social-container">
+                        <a href="https://www.youtube.com" target="_blank">
+                            <img src="./pics/socials/youtube.png" alt="YouTube">
+                        </a>
+                    </div>
+
+                    <div class="logo-social-container">
+                        <a href="https://www.linkedin.com/in/mohamed-bouguezine-1b51b725b/" target="_blank">
+                            <img src="./pics/socials/linkedin.png" alt="LinkedIn">
+                        </a>
+                    </div>
+
+                    <div class="logo-social-container">
+                        <a href="https://www.instagram.com/mouh__bg_z/" target="_blank">
+                            <img src="./pics/socials/instagram.png" alt="Instargram">
+                        </a>
+                    </div>
+                </div>
+           </div>
+           
         </footer>
     </body>
 </html>
+
+<a href="https://www.flaticon.com/free-icons/youtube" title="youtube icons">Youtube icons created by Swifticons - Flaticon</a>
+<a href="https://www.flaticon.com/free-icons/linkedin" title="linkedin icons">Linkedin icons created by riajulislam - Flaticon</a>
+<a href="https://www.flaticon.com/free-icons/instagram" title="instagram icons">Instagram icons created by Freepik - Flaticon</a>
